@@ -1,0 +1,239 @@
+@import url("./common.css");
+@import url("./index.css");
+
+// referral partners css
+
+
+// intro
+
+section.moving-poster {
+  .poster-area {
+    background-color: var(--color4);
+  }
+}
+
+
+
+// 
+
+.w50per {
+  width: 50%;
+}
+
+.w669per {
+  width: 66.9%;
+}
+
+.w100per {
+  width: 100%;
+}
+
+
+// 3.1
+
+
+.bg01 {
+  background-color: var(--color3);
+}
+
+.bg02 {
+  background-color: var(--color8);
+  // position: absolute;
+  // left: 0;
+  // top: 0;
+}
+
+.bg03 {
+  background-color: var(--color5);
+  // position: absolute;
+  // left: 0;
+  // top: 0;
+}
+
+.bg04 {
+  background-color: var(--color6);
+  // position: absolute;
+  // left: 0;
+  // top: 0;
+}
+
+.works-combine {
+  position: relative;
+
+  .bg-area {
+
+
+    .selling-company-area {
+      background-color: transparent;
+
+      .svg-num {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+      }
+    }
+  }
+}
+
+
+
+
+//  3.2
+.join-contain{
+  width: 66.9%;
+
+  .join-form-area {
+    display: flex;
+    width: 100%;
+    margin-bottom: 37px;
+
+    .join-form-box {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 0 10px;
+      text-align: left;
+    }
+
+    &:last-child {
+      .join-form-box {
+        position: relative;
+        flex-direction: row;
+
+        input:checked+label::after {
+          opacity: 1;
+        }
+
+        label {
+          span {
+            a {
+              font-weight: 700;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.join-chbox {
+  display: flex;
+  align-items: center;
+  width: auto;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+    max-width: 25px;
+    margin-right: 14px;
+    border: 2px solid var(--black);
+    border-radius: 3px;
+  }
+
+  &::after {
+    content: "";
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 30px;
+    left: 14px;
+    opacity: 0;
+    background-image: url("../img/check.svg");
+    background-size: 19px 19px;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+.sub-btn-box {
+  align-items: center;
+  color: var(--white);
+  background-color: var(--black);
+
+  .form-sub-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+    color: inherit;
+
+    .mail-spot {
+      transform: translateX(25px);
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+
+    .right-arrow-btn {
+      display: flex;
+      width: 30px;
+    }
+  }
+}
+
+.right-arrow-btn {
+  overflow: hidden;
+
+  span {
+    &:nth-child(1) {
+      transform: translateX(-30px);
+      transition: 500ms;
+      // text-indent: -999px;
+    }
+
+    &:nth-child(2) {
+      transform: translateX(-16px);
+      transition: 500ms;
+    }
+  }
+}
+
+
+.form-sub-btn:hover {
+  .right-arrow-btn {
+    span {
+      &:nth-child(1) {
+        transform: translateX(0px);
+        // text-indent: 0;
+      }
+
+      &:nth-child(2) {
+        transform: translateX(100px);
+        // text-indent: 999px;
+      }
+    }
+  }
+}
+
+
+.label-title {
+  font-size: 20px;
+}
+
+.join-form-common {
+  width: 100%;
+  margin-top: 11px;
+  padding: 16px 20px 18px;
+  border: 0;
+  border-radius: 0;
+  font-size: 20px;
+  background-color: rgba(var(--black-rgb)/10%);
+  border-bottom: 4px solid rgba(var(--black-rgb)/30%);
+  transition: border-bottom-width 300ms var(--easing), border-bottom-color 300ms var(--easing), padding-bottom 300ms var(--easing);
+
+  &:focus {
+    outline: none;
+    border-bottom: 8px solid rgba(var(--black-rgb)/30%);
+  }
+}
+
+
+@import "_referral_partners";

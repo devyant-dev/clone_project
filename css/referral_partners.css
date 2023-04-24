@@ -1,0 +1,328 @@
+@import url("./common.css");
+@import url("./index.css");
+section.moving-poster .poster-area {
+  background-color: var(--color4);
+}
+
+.w50per {
+  width: 50%;
+}
+
+.w669per {
+  width: 66.9%;
+}
+
+.w100per {
+  width: 100%;
+}
+
+.bg01 {
+  background-color: var(--color3);
+}
+
+.bg02 {
+  background-color: var(--color8);
+}
+
+.bg03 {
+  background-color: var(--color5);
+}
+
+.bg04 {
+  background-color: var(--color6);
+}
+
+.works-combine {
+  position: relative;
+}
+.works-combine .bg-area .selling-company-area {
+  background-color: transparent;
+}
+.works-combine .bg-area .selling-company-area .svg-num {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.join-contain {
+  width: 66.9%;
+}
+.join-contain .join-form-area {
+  display: flex;
+  width: 100%;
+  margin-bottom: 37px;
+}
+.join-contain .join-form-area .join-form-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 10px;
+  text-align: left;
+}
+.join-contain .join-form-area:last-child .join-form-box {
+  position: relative;
+  flex-direction: row;
+}
+.join-contain .join-form-area:last-child .join-form-box input:checked + label::after {
+  opacity: 1;
+}
+.join-contain .join-form-area:last-child .join-form-box label span a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.join-chbox {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+.join-chbox::before {
+  display: block;
+  content: "";
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  max-width: 25px;
+  margin-right: 14px;
+  border: 2px solid var(--black);
+  border-radius: 3px;
+}
+.join-chbox::after {
+  content: "";
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: 30px;
+  left: 14px;
+  opacity: 0;
+  background-image: url("../img/check.svg");
+  background-size: 19px 19px;
+  background-repeat: no-repeat;
+}
+
+.sub-btn-box {
+  align-items: center;
+  color: var(--white);
+  background-color: var(--black);
+}
+.sub-btn-box .form-sub-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  font-size: 20px;
+  color: inherit;
+}
+.sub-btn-box .form-sub-btn .mail-spot {
+  transform: translateX(25px);
+}
+.sub-btn-box .form-sub-btn .mail-spot svg {
+  margin-right: 10px;
+}
+.sub-btn-box .form-sub-btn .right-arrow-btn {
+  display: flex;
+  width: 30px;
+}
+
+.right-arrow-btn {
+  overflow: hidden;
+}
+.right-arrow-btn span:nth-child(1) {
+  transform: translateX(-30px);
+  transition: 500ms;
+}
+.right-arrow-btn span:nth-child(2) {
+  transform: translateX(-16px);
+  transition: 500ms;
+}
+
+.form-sub-btn:hover .right-arrow-btn span:nth-child(1) {
+  transform: translateX(0px);
+}
+.form-sub-btn:hover .right-arrow-btn span:nth-child(2) {
+  transform: translateX(100px);
+}
+
+.label-title {
+  font-size: 20px;
+}
+
+.join-form-common {
+  width: 100%;
+  margin-top: 11px;
+  padding: 16px 20px 18px;
+  border: 0;
+  border-radius: 0;
+  font-size: 20px;
+  background-color: rgba(var(--black-rgb)/10%);
+  border-bottom: 4px solid rgba(var(--black-rgb)/30%);
+  transition: border-bottom-width 300ms var(--easing), border-bottom-color 300ms var(--easing), padding-bottom 300ms var(--easing);
+}
+.join-form-common:focus {
+  outline: none;
+  border-bottom: 8px solid rgba(var(--black-rgb)/30%);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .works-combine {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .works-combine .bg-area {
+    width: 48%;
+  }
+  .works-combine .bg-area .selling-company-area {
+    background-color: transparent;
+    min-height: auto;
+  }
+  .works-combine .bg-area .selling-company-area .svg-num {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  .works-combine .bg-area .selling-company-area > p {
+    width: 60%;
+    margin: 3rem auto 0;
+  }
+  .works-combine .bg-area .selling-company-area .text-box > p {
+    margin-bottom: 3rem;
+  }
+  .works-combine .bg-area .selling-company-area .text-box .box-sub-title {
+    font-size: 34px;
+  }
+  .works-combine .bg-area .selling-company-area .text-box .selling-btn {
+    margin-bottom: 3rem;
+  }
+  .join-contain {
+    width: 100%;
+  }
+  .join-contain .join-form-area {
+    display: block;
+    width: 100%;
+    margin-bottom: 37px;
+  }
+  .join-contain .join-form-area .join-form-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0;
+    text-align: left;
+  }
+  .join-contain .join-form-area:last-child .join-form-box {
+    position: relative;
+    flex-direction: row;
+  }
+  .join-contain .join-form-area:last-child .join-form-box input:checked + label::after {
+    opacity: 1;
+  }
+  .join-contain .join-form-area:last-child .join-form-box label span a {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  .join-chbox {
+    display: flex;
+    align-items: center;
+    width: auto;
+  }
+  .join-chbox::before {
+    display: block;
+    content: "";
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+    max-width: 25px;
+    margin-right: 14px;
+    border: 2px solid var(--black);
+    border-radius: 3px;
+  }
+  .join-chbox::after {
+    content: "";
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 30px;
+    left: 14px;
+    opacity: 0;
+    background-image: url("../img/check.svg");
+    background-size: 19px 19px;
+    background-repeat: no-repeat;
+  }
+  .sub-btn-box {
+    align-items: center;
+    color: var(--white);
+    background-color: var(--black);
+  }
+  .sub-btn-box .form-sub-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+    color: inherit;
+  }
+  .sub-btn-box .form-sub-btn .mail-spot {
+    transform: translateX(25px);
+  }
+  .sub-btn-box .form-sub-btn .mail-spot svg {
+    margin-right: 10px;
+  }
+  .sub-btn-box .form-sub-btn .right-arrow-btn {
+    display: flex;
+    width: 30px;
+  }
+  .right-arrow-btn {
+    overflow: hidden;
+  }
+  .right-arrow-btn span:nth-child(1) {
+    transform: translateX(-30px);
+    transition: 500ms;
+  }
+  .right-arrow-btn span:nth-child(2) {
+    transform: translateX(-16px);
+    transition: 500ms;
+  }
+  .form-sub-btn:hover .right-arrow-btn span:nth-child(1) {
+    transform: translateX(0px);
+  }
+  .form-sub-btn:hover .right-arrow-btn span:nth-child(2) {
+    transform: translateX(100px);
+  }
+  .label-title {
+    font-size: 20px;
+  }
+  .join-form-common {
+    width: 100%;
+    margin-top: 11px;
+    padding: 16px 20px 18px;
+    border: 0;
+    border-radius: 0;
+    font-size: 20px;
+    background-color: rgba(var(--black-rgb)/10%);
+    border-bottom: 4px solid rgba(var(--black-rgb)/30%);
+    transition: border-bottom-width 300ms var(--easing), border-bottom-color 300ms var(--easing), padding-bottom 300ms var(--easing);
+  }
+  .join-form-common:focus {
+    outline: none;
+    border-bottom: 8px solid rgba(var(--black-rgb)/30%);
+  }
+  .form-sec {
+    height: auto;
+  }
+  .form-sec .form-sec-area {
+    height: 500px;
+  }
+  .form-sec .form-sec-area .form-box .form-text-spot {
+    padding: 0;
+  }
+  .form-sec .form-sec-area .form-box .form-btn-spot {
+    margin-top: 50px;
+  }
+  .form-sec .form-sec-area .form-box .form-btn-spot a {
+    color: var(--white);
+    background-color: transparent;
+  }
+}/*# sourceMappingURL=referral_partners.css.map */

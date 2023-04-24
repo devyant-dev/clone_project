@@ -1,0 +1,117 @@
+@import url("./common.css");
+@import url("./index.css");
+
+// about.scss
+
+
+
+// intro
+
+section.moving-poster {
+  .poster-area {
+    background-color: var(--color3);
+  }
+}
+
+
+
+// 2.2 Guiding principles
+
+.selling-company-area {
+  background-color: var(--color6);
+}
+
+
+// 2.3 How we approach a deal
+
+.area_box_2-3 {
+  padding: 165px 0 140px;
+  background-color: rgba(var(--color3-rgb)/70%);
+
+  .common-title-area,
+  .we-like-area {
+    padding: 0 20px 2rem 20px;
+  }
+}
+
+
+// 2.4 Our Team
+
+.team {
+
+  .team-area {
+    width: 100%;
+
+    .team-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      li {
+        display: block;
+        width: 32%;
+        margin-bottom: 40px;
+        // mix-blend-mode: hard-light;
+
+
+        &:nth-child(odd) .team-img-box .img-bg-spot {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 3;
+          background-color: var(--color4);
+          mix-blend-mode: hard-light;
+        }
+
+        &:nth-child(even) .team-img-box .img-bg-spot {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 3;
+          background-color: #84796c;
+          mix-blend-mode: hard-light;
+        }
+
+        .team-img-box {
+          width: 100%;
+          position: relative;
+
+          img {
+            width: 100%;
+            position: relative;
+            z-index: 2;
+          }
+
+          .img-bg-common {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+            background-color: var(--color5);
+          }
+
+
+
+        }
+
+        .name-box {
+          font-size: 36px;
+          line-height: 39px;
+          font-weight: 700;
+          margin: 12px 0 20px 0;
+        }
+
+        .status-box {
+          padding: 6px 0 10px;
+          font-size: 20px;
+          border-top: 1px solid #000;
+          border-bottom: 1px solid #000;
+        }
+      }
+    }
+  }
+}
+
+
+
+@import "_about";

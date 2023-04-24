@@ -1,0 +1,242 @@
+$mobile: 480px;
+$tablet: 768px;
+
+
+@mixin device ($min, $max) {
+
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+
+  }
+}
+
+
+// tablet
+
+@include device (768px, 1023px) {
+
+
+    .works-combine {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+      
+        .bg-area {
+            width: 48%;
+      
+            .selling-company-area {
+            background-color: transparent;
+            min-height: auto;
+      
+                .svg-num {
+                position: absolute;
+                left: 20px;
+                top: 20px;
+                }
+
+                >p{
+                    width: 60%;
+                    margin: 3rem auto 0;
+                }
+
+                .text-box{
+                    >p{
+                        margin-bottom: 3rem;
+                    }
+
+                    .box-sub-title{
+                        font-size: 34px;
+                    }
+
+                    .selling-btn{
+                        margin-bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+//  3.2
+.join-contain{
+    width: 100%;
+  
+    .join-form-area {
+      display: block;
+      width: 100%;
+      margin-bottom: 37px;
+  
+      .join-form-box {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0;
+        text-align: left;
+      }
+  
+      &:last-child {
+        .join-form-box {
+          position: relative;
+          flex-direction: row;
+  
+          input:checked+label::after {
+            opacity: 1;
+          }
+  
+          label {
+            span {
+              a {
+                font-weight: 700;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .join-chbox {
+    display: flex;
+    align-items: center;
+    width: auto;
+  
+    &::before {
+      display: block;
+      content: "";
+      width: 25px;
+      height: 25px;
+      min-width: 25px;
+      max-width: 25px;
+      margin-right: 14px;
+      border: 2px solid var(--black);
+      border-radius: 3px;
+    }
+  
+    &::after {
+      content: "";
+      width: 19px;
+      height: 19px;
+      position: absolute;
+      top: 30px;
+      left: 14px;
+      opacity: 0;
+      background-image: url("../img/check.svg");
+      background-size: 19px 19px;
+      background-repeat: no-repeat;
+    }
+  }
+  
+  
+  
+  .sub-btn-box {
+    align-items: center;
+    color: var(--white);
+    background-color: var(--black);
+  
+    .form-sub-btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 80px;
+      font-size: 20px;
+      color: inherit;
+  
+      .mail-spot {
+        transform: translateX(25px);
+  
+        svg {
+          margin-right: 10px;
+        }
+      }
+  
+      .right-arrow-btn {
+        display: flex;
+        width: 30px;
+      }
+    }
+  }
+  
+  .right-arrow-btn {
+    overflow: hidden;
+  
+    span {
+      &:nth-child(1) {
+        transform: translateX(-30px);
+        transition: 500ms;
+        // text-indent: -999px;
+      }
+  
+      &:nth-child(2) {
+        transform: translateX(-16px);
+        transition: 500ms;
+      }
+    }
+  }
+  
+  
+  .form-sub-btn:hover {
+    .right-arrow-btn {
+      span {
+        &:nth-child(1) {
+          transform: translateX(0px);
+          // text-indent: 0;
+        }
+  
+        &:nth-child(2) {
+          transform: translateX(100px);
+          // text-indent: 999px;
+        }
+      }
+    }
+  }
+  
+  
+  .label-title {
+    font-size: 20px;
+  }
+  
+  .join-form-common {
+    width: 100%;
+    margin-top: 11px;
+    padding: 16px 20px 18px;
+    border: 0;
+    border-radius: 0;
+    font-size: 20px;
+    background-color: rgba(var(--black-rgb)/10%);
+    border-bottom: 4px solid rgba(var(--black-rgb)/30%);
+    transition: border-bottom-width 300ms var(--easing), border-bottom-color 300ms var(--easing), padding-bottom 300ms var(--easing);
+  
+    &:focus {
+      outline: none;
+      border-bottom: 8px solid rgba(var(--black-rgb)/30%);
+    }
+  }
+
+
+
+  .form-sec{
+    height: auto;
+
+    .form-sec-area{
+        height: 500px;
+
+        .form-box{
+            .form-text-spot{
+                padding: 0;
+            }
+
+            .form-btn-spot{
+                margin-top: 50px;
+                a{
+                    color: var(--white);
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+  }
+
+}

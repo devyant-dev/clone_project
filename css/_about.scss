@@ -1,0 +1,113 @@
+$mobile: 480px;
+$tablet: 768px;
+
+
+@mixin device ($min, $max) {
+
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+
+  }
+}
+
+
+
+@include device (768px, 1023px) {
+
+  // tablet
+  body {
+    background-color: #eee;
+  }
+
+
+  // 2.3 How we approach a deal
+
+  .area_box_2-3 {
+    padding: 70px 0 60px;
+
+    .common-title-area,
+    .we-like-area {
+      padding: 0 20px 20px 20px;
+    }
+  }
+
+
+
+
+  // 2.4 Our Team
+
+  .team {
+
+    .team-area {
+      width: 100%;
+
+      .team-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        li {
+          display: block;
+          width: 33%;
+          margin-bottom: 40px;
+          padding: 0 10px;
+          // mix-blend-mode: hard-light;
+
+
+          &:nth-child(odd) .team-img-box .img-bg-spot {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 3;
+            background-color: var(--color4);
+            mix-blend-mode: hard-light;
+          }
+
+          &:nth-child(even) .team-img-box .img-bg-spot {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 3;
+            background-color: #84796c;
+            mix-blend-mode: hard-light;
+          }
+
+          .team-img-box {
+            width: 100%;
+            position: relative;
+
+            img {
+              width: 100%;
+              position: relative;
+              z-index: 2;
+            }
+
+            .img-bg-common {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              z-index: 1;
+              background-color: var(--color5);
+            }
+
+          }
+
+          .name-box {
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+            font-weight: 700;
+            margin: 15px 0 10px 0;
+          }
+
+          .status-box {
+            padding: 4px 0 10px;
+            font-size: 1rem;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+          }
+        }
+      }
+    }
+  }
+
+}
