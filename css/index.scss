@@ -285,6 +285,7 @@
 
   .fast-box02 {
     width: 100%;
+    margin-bottom: 30px;
 
     .fast-box-area {
       width: 100%;
@@ -314,17 +315,17 @@
         display: inline-block;
         position: absolute;
         top: 50%;
-        left: 60%;
+        left: 66%;
         // width: 370px;
         transform: translateY(-50%);
 
         span {
           display: block;
           position: relative;
-          font-size: 40px;
+          font-size: 60px;
           font-weight: 700;
           letter-spacing: -1px;
-          line-height: 45px;
+          line-height: 60px;
 
           &:after {
             content: "";

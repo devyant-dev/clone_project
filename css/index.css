@@ -215,6 +215,7 @@
 }
 .fast-area02 .fast-box02 {
   width: 100%;
+  margin-bottom: 30px;
 }
 .fast-area02 .fast-box02 .fast-box-area {
   width: 100%;
@@ -242,16 +243,16 @@
   display: inline-block;
   position: absolute;
   top: 50%;
-  left: 60%;
+  left: 66%;
   transform: translateY(-50%);
 }
 .fast-area02 .fast-box02 .fast-box-area .fast-text span {
   display: block;
   position: relative;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 700;
   letter-spacing: -1px;
-  line-height: 45px;
+  line-height: 60px;
 }
 .fast-area02 .fast-box02 .fast-box-area .fast-text span:after {
   content: "";
@@ -456,7 +457,7 @@ section.we-avoid .avoid-con-area .we-avoid-area .turnaround-box {
     width: 100%;
   }
   .selling-company-area {
-    display: block;
+    display: flex;
     width: 100%;
     min-height: min(100vh, 740px);
     padding: 1.25rem;
@@ -465,8 +466,8 @@ section.we-avoid .avoid-con-area .we-avoid-area .turnaround-box {
   }
   .selling-company-area p {
     width: 100%;
-    margin-top: 3rem;
     mix-blend-mode: multiply;
+    transform: scale(1.5);
   }
   .selling-company-area p img {
     width: 100%;

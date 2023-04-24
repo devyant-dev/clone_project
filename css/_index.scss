@@ -48,7 +48,7 @@ $tablet: 768px;
   // 1.2 selling-company
 
   .selling-company-area {
-    display: block;
+    display: flex;
     // align-items: center;
     // justify-content: space-between;
     width: 100%;
@@ -59,8 +59,9 @@ $tablet: 768px;
 
     p {
       width: 100%;
-      margin-top: 3rem;
+      // margin-top: 3rem;
       mix-blend-mode: multiply;
+      transform: scale(1.5);
 
       img {
         width: 100%;

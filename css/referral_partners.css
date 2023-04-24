@@ -18,14 +18,17 @@ section.moving-poster .poster-area {
 
 .bg01 {
   background-color: var(--color3);
+  margin-bottom: 30px;
 }
 
 .bg02 {
   background-color: var(--color8);
+  margin-bottom: 30px;
 }
 
 .bg03 {
   background-color: var(--color5);
+  margin-bottom: 30px;
 }
 
 .bg04 {
